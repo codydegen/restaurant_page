@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom CSS */
+
+@font-face {
+  font-family: 'MyFont';
+  src:  url('./my-font.woff2') format('woff2'),
+        url('./my-font.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+#content {
+  font-family: 'MyFont';
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+}
+
+#header-picture {
+  background: url('./icon.png');
+  padding-right: 2em;
+  width: 5em;
+}
+
+#header-list {
+  display: flex;
+  flex-direction: row;
+}
+
+#header-list > li {
+  padding: 1em;
+}
+
+#main-body {
+  height: 60em;
+  background: url('./background-img.svg');
+  /* filter: blur(8px); */
+  /* -webkit-filter: blur(8px); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#restaurant-tag {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 1.2em auto;
+}
+
+#body-about-us {
+  font-size: 0.8em;
+  margin: 1em auto;
+  line-height: 1.5;
+  max-width: 50em;
+}
+
+#button-container {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+#button-container > button {
+  padding: 1em;
+  margin: 0 1em 0;
+
+
+}
+
+footer {
+  width: 100%;
+  background-color: red;
+  text-align: center;
+}
+
