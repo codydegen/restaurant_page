@@ -61,7 +61,7 @@ table {
   font-family: 'MyFont';
 }
 
-header {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
