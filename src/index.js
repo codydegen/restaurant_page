@@ -1,12 +1,26 @@
 import './style.css';
-import { Layout } from "./page-layout.js";
-import {  } from "./home.js";
+import { Layout } from "./modules/page-layout.js";
+import { Home } from "./modules/home.js";
+import { Menu } from "./modules/menu.js";
+import { Contact } from "./modules/contact.js";
 
 Layout.createDocument();
-console.log("hello2");
+Home.render();
 
-function testFunction() {
-  return 2;
-};
+const homeButton = document.getElementById('header-list-home');
+homeButton.addEventListener('click', () => {
+  Layout.clearBody();
+  Home.render();
+});
 
-export { testFunction }
+const menuButton = document.getElementById('header-list-menu');
+menuButton.addEventListener('click', () => {
+  Layout.clearBody();
+  Menu.render();
+})
+
+const contactButton = document.getElementById('header-list-contact');
+contactButton.addEventListener('click', () => {
+  Layout.clearBody();
+  Contact.render();
+})

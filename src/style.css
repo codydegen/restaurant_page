@@ -51,8 +51,8 @@ table {
 
 @font-face {
   font-family: 'MyFont';
-  src:  url('./my-font.woff2') format('woff2'),
-        url('./my-font.woff') format('woff');
+  src:  url('./assets/my-font.woff2') format('woff2'),
+        url('./assets/my-font.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
@@ -69,7 +69,7 @@ nav {
 }
 
 #header-picture {
-  background: url('./icon.png');
+  background: url('./assets/icon.png');
   padding-right: 2em;
   width: 5em;
 }
@@ -85,7 +85,7 @@ nav {
 
 #main-body {
   height: 60em;
-  background: url('./background-img.svg');
+  background: url('./assets/background-img.svg');
   /* filter: blur(8px); */
   /* -webkit-filter: blur(8px); */
   background-position: center;
@@ -115,8 +115,30 @@ nav {
 #button-container > button {
   padding: 1em;
   margin: 0 1em 0;
+}
 
+#food-container {
+  padding: 1em;
+  display: flex;
+}
 
+.food-card {
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  max-width: 25em;
+  margin: 2em;
+}
+
+#contact-us-container {
+  padding: 1em;
+  display: flex;
+}
+
+.contact-card {
+  border: 0.1em solid black;
+  border-radius: 0.5em;
+  max-width: 25em;
+  margin: 2em;
 }
 
 footer {
